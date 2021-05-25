@@ -1,4 +1,7 @@
 # AK-CLOZE
+5-24更新：
+加入注释
+
 5-23更新：
 以CLOTH/test/high/目录下的全部json文件为例，建立了包含article,option,answer的dataset
 
