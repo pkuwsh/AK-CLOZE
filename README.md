@@ -1,10 +1,17 @@
-# AK-CLOZE
-5-24更新：
-加入注释
+# AKCLOZE
 
-5-23更新：
-以CLOTH/test/high/目录下的全部json文件为例，建立了包含article,option,answer的dataset
+## 1.基本结构
+项目代码的结构依次如下：数据处理（训练集、验证集、测试集；分词、构建词典&词嵌入）-->模型构建-->训练-->测试
 
-对article中的词利用glove做嵌入完成了词典的生成
+## 2.文件描述
+main.py包含项目的主体框架
+data_utils.py对数据集的数据进行预处理，以供训练使用.
+model.py和train.py分别包含LSTM模型和训练相关方法，并在main中调用.
+test.py包含测试所需函数.
 
-后续还需要完成文本数据集的进一步处理（填词入空）以及label的处理
+## 3.
+调试时，将data_utils中17行和350行处的os.chdir('/../课件/ai引论/final')中的目录改成data_utils所在的目录，再进行运行.
+
+## 4.数据集
+采用CLOTH数据集，https://aclanthology.org/D18-1257/
+处理过的数据集附在.data.rar中
