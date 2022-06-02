@@ -5,9 +5,9 @@
 
 ## 2.文件描述
 main.py包含项目的主体框架
-data_utils.py对数据集的数据进行预处理，以供训练使用.
-model.py和train.py分别包含LSTM模型和训练相关方法，并在main中调用.
-test.py包含测试所需函数.
+data_utils.py对数据集的数据进行预处理，以供训练使用
+model.py和train.py分别包含LSTM模型和训练相关方法，并在main中调用
+test.py包含测试所需函数
 
 ## 3.数据集
 采用CLOTH数据集，https://aclanthology.org/D18-1257/
