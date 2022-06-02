@@ -14,7 +14,7 @@ class MyDataset_train(Dataset):
 
     def __init__(self, data_list, article_field, label_field):
 
-        os.chdir('/../课件/ai引论/final')
+        os.chdir('./')
         #print("train path:::", os.getcwd())
         fields = [('article', article_field), ('label', label_field)]
         examples = []
@@ -347,7 +347,7 @@ class MyDataset_test(Dataset):
         self.option_list = []
         # 因为目前填入的全是正确选项，label全部做成了1
         self.label_list = []
-        os.chdir('/../课件/ai引论/final')
+        os.chdir('./')
         #print(os.getcwd())
         with open(datapath_test, 'r') as f_json:
             file_content = json.load(f_json)
