@@ -9,9 +9,6 @@ data_utils.py对数据集的数据进行预处理，以供训练使用.
 model.py和train.py分别包含LSTM模型和训练相关方法，并在main中调用.
 test.py包含测试所需函数.
 
-## 3.
-调试时，将data_utils中17行和350行处的os.chdir('/../课件/ai引论/final')中的目录改成data_utils所在的目录，再进行运行.
-
-## 4.数据集
+## 3.数据集
 采用CLOTH数据集，https://aclanthology.org/D18-1257/
 处理过的数据集附在.data.rar中
